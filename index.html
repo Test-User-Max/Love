@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Saumya ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="bg-hearts"></div>
+
+    <section id="intro" class="screen active">
+        <h1 class="romantic-title">Dear Saumya ❤️</h1>
+        <p id="typing-text"></p>
+        <button id="btn-intro" class="btn hidden" onclick="showScreen('story')">Click to Continue</button>
+    </section>
+
+    <section id="story" class="screen hidden">
+        <h2 class="romantic-title">❤️ Our Story</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="heart-bullet">💖</div>
+                <p>It all started back in Class 7...</p>
+            </div>
+            <div class="timeline-item">
+                <div class="heart-bullet">💖</div>
+                <p>9 beautiful years of laughter, tears, and growing up together.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="heart-bullet">💖</div>
+                <p>Every single day, I fall in love with you a little more.</p>
+            </div>
+        </div>
+        <button class="btn" onclick="showScreen('emotional')">Next</button>
+    </section>
+
+    <section id="emotional" class="screen hidden">
+        <h2 class="romantic-title">❤️ What You Mean To Me</h2>
+        <p class="message">You are my peace, my biggest cheerleader, and my best friend. Through every phase of life, having you by my side has been my greatest blessing. I can't imagine a tomorrow without you in it.</p>
+        <button class="btn" onclick="showScreen('proposal')">One More Thing...</button>
+    </section>
+
+    <section id="proposal" class="screen hidden">
+        <div class="card">
+            <h2 class="romantic-title">💖 Will You Be My Valentine? 💖</h2>
+            <div class="buttons">
+                <button class="btn btn-yes" onclick="triggerYes()">YES ❤️</button>
+                <button id="btn-no" class="btn btn-no">NO 🙈</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="celebration" class="screen hidden">
+        <h1 class="romantic-title">❤️ Congratulations Saumya! ❤️</h1>
+        <p class="message">You just made me the happiest guy in the world! I love you! 💕</p>
+        <div class="signature">
+            <p>Forever Yours,</p>
+            <h3>Harsh Mishra <span class="heartbeat">❤️</span></h3>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
